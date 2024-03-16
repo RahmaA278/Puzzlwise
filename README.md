@@ -9,7 +9,7 @@
 
 <br>
 
-:mag_right: Improve your critical thinking skills with logic grid puzzles :mag:
+#### :mag_right: Improve your critical thinking skills with logic grid puzzles :mag:
 
 Test your historical knowledge and sharpen your critical thinking skills with this engaging game application. Immerse yourself in the world of history while tackling logic grid puzzles, a brain-teasing challenge that requires you to deduce relationships between elements based on a set of clues. These puzzles provide an excellent opportunity to practice logical reasoning and problem-solving abilities while exploring historical themes.
 
