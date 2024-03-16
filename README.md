@@ -21,6 +21,6 @@ This simple project has a landing page and puzzle page.
 
 ## Backend
 | Route | Purpose | Parameters |
-|------:|---------|------------|
+|:------|---------|------------|
 |/clues|Lists all the clues for each of the topics available to play from|None|
 |/clues/:topicNum|Lists all the clues for a speciific topic|topic id|
