@@ -25,4 +25,4 @@ This simple project has a landing page and puzzle page.
 | Route | Purpose | Parameters |
 |:------|---------|------------|
 |/clues|Lists all the clues for each of the topics available to play from|none|
-|/clues/:topicNum|Lists all the clues for a speciific topic|topic id|
+|/clues/:topicNum|Lists all the clues for a specific topic|topic id|
