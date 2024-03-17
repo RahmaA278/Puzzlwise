@@ -26,3 +26,8 @@ This simple project has a landing page and puzzle page.
 |:------|---------|------------|
 |/clues|Lists all the clues for each of the topics available to play from|none|
 |/clues/:topicNum|Lists all the clues for a specific topic|topic id|
+
+## To view application
+1) run the command `npm i` in the server and client folders, separately.
+2) run the command `npm run dev` in the server folder to get the server started.
+3) right click the home.html file in the client folder and select 'Open with Live Server'
