@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./puzzle.css">
+    <script src="./puzzle.js" defer></script>
+    <title>Puzzlwise</title>
+</head>
+<body>
+    <button id="home">⌂</button>
+    <div id="game">  <!-- popup -->
+        <div id="multiple-choice">
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="modal-title" id="modal-title">Question?...</div>
+                </div>
+                <div class="modal-body" id="multi-choice-container">
+                    <p id="multi-choice-help">Drag and drop the events to arrange them in chronological order:</p>
+                    <ul id="sortable-list">
+                        <li class="multi-choice-answers" id="choice1">Answer 1</li>
+                        <li class="multi-choice-answers" id="choice2">Answer 2</li>
+                        <li class="multi-choice-answers" id="choice3">Answer 3</li>
+                        <li class="multi-choice-answers" id="choice4">Answer 4</li>
+                    </ul>
+                    <br>
+                    <button id="submit">Submit</button>
+                </div>
+                <div id="correct-reasons">
+                    <p id="reason-message"></p>
+                    <ul id="reason-list">
+                        <li id="reason1"></li>
+                        <li id="reason2"></li>
+                        <li id="reason3"></li>
+                        <li id="reason4"></li>
+                    </ul>
+                </div>
+            </div>
+            <dialog id="popup">
+                <p id="popupMessage">Congrats! You're 100% correct</p>
+                <button id="closePopup">Close</button>
+            </dialog>             
+            <dialog id="popup-half">
+                <p id="popupHalfMessage">Good job, You're half correct</p>
+                <button id="tryAgainButton">Try Again</button>
+                <button id="revealAnswerButton">Reveal Answer</button>
+            </dialog>       
+        </div>
+    </div>
+    <!-- Game -->
+    <div class="container" id="container">
+        <div id="logic-puzzle">
+            <div class="grid-container">
+                <div class="inactive-grid"></div>
+                <div class="grid-header-top" id="h1a"></div>
+                <div class="grid-header-top" id="h1b"></div>
+                <div class="grid-header-top" id="h1c"></div>
+                <div class="grid-header-top" id="h3a"></div>
+                <div class="grid-header-top" id="h3b"></div>
+                <div class="grid-header-top" id="h3c"></div>
+                <div class="grid-header-left" id="h2a"></div>
+                <div class="grid-item" id="top-corner"></div>
+                <div class="grid-item" id="grid-item-top"></div>
+                <div class="grid-item" id="grid-item-top"></div>
+                <div class="grid-item" id="grid-item-top"></div>
+                <div class="grid-item" id="grid-item-top"></div>
+                <div class="grid-item" id="grid-item-top"></div>
+                <div class="grid-header-left" id="h2b"></div>
+                <div class="grid-item" id="grid-item-left"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-header-left" id="h2c"></div>
+                <div class="grid-item" id="grid-item-left"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-header-left" id="h4a"></div>
+                <div class="grid-item" id="grid-item-left"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="inactive-grid"></div>
+                <div class="inactive-grid"></div>
+                <div class="inactive-grid"></div>
+                <div class="grid-header-left" id="h4b"></div>
+                <div class="grid-item" id="grid-item-left"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="inactive-grid"></div>
+                <div class="inactive-grid"></div>
+                <div class="inactive-grid"></div>
+                <div class="grid-header-left" id="h4c"></div>
+                <div class="grid-item" id="grid-item-left"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="inactive-grid"></div>
+                <div class="inactive-grid"></div>
+                <div class="inactive-grid"></div>
+            </div>
+        </div>
+
+        <div class="info" id="info">
+            <div id="logic-question">WW1 Question:</div>
+            <div id="clues-box">
+                <div class="clues-title" id="clues-title">Clues</div>
+                <div id="clue1" class="clue">The first clue....</div>
+                <div id="clue2" class="clue">The second clue....</div>
+                <div id="clue3" class="clue">The third clue....</div>
+                <div id="clue4" class="clue">The fourth clue....</div>
+                <div id="clue5" class="clue">The fifth clue....</div>
+                <div id="clue6" class="clue">The sixth clue....</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
