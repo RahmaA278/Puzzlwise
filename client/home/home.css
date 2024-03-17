@@ -1,0 +1,80 @@
+body {
+    background: goldenrod;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 2% 0 2% 0;
+    -webkit-text-stroke: 1px navy;
+}
+
+.heading {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+.instructions {
+    margin: 0;
+    display: inline-block;
+    width: 48%;
+    border-radius: 40px;
+    border: 5px solid navy;
+    font-size: 23px;
+    text-align: center; 
+    color: black;
+    padding: 5px 10px 5px 10px;
+}
+
+.whatTopic {
+    display: inline-block;
+    width: 48%;
+    border-radius: 40px;
+}
+
+.whatTopic p {
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center; 
+    color: black;
+    margin: 25px 0 25px 0;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background: navy;
+    color: white;
+    border-radius: 40px;
+    font-size: 40px;
+    padding: 5px 20px 5px 20px;
+}
+
+.button:hover {
+    background: lightsteelblue;
+    color: navy;
+}
+
+.selected {
+    background: lightsteelblue;
+    color: navy;
+}
+
+#play {
+    background: black;
+    color: white;
+}
+
+#play:hover {
+    background-color: white ;
+    color: black;
+}

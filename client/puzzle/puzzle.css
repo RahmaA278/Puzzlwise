@@ -1,0 +1,320 @@
+body {
+    background: goldenrod;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#home {
+    background: transparent;
+    border: none;
+    font-size: 23px;
+    font-weight: bolder;
+    padding: 0 6px 3px 6px;
+}
+#home:hover {
+    background: navy;
+    border-radius: 100%;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.info {
+    display: inline-block;
+    width: 52%;
+    border-radius: 40px;
+}
+
+#logic-puzzle {
+    display: inline-block;
+    width: 44%;
+    border-radius: 40px;
+}
+
+/* Logic grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 140px 65px 65px 65px 65px 65px 65px;
+    grid-template-rows: 140px 65px 65px 65px 65px 65px 65px;
+    padding: 1%;
+}
+
+.grid-item {
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid navy;
+    border-right: 4px solid navy;
+    padding: 2%;
+    text-align: center;
+}
+
+#grid-item-left {
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid navy;
+    border-right: 4px solid navy;
+    border-left: 4px solid navy;
+    padding: 2%;
+    text-align: center;
+}
+
+#grid-item-top {
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid navy;
+    border-right: 4px solid navy;
+    border-top: 4px solid navy;
+    padding: 2%;
+    text-align: center;
+}
+
+#top-corner {
+    border: 4px solid navy;
+}
+
+.grid-header-top {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top: 4px solid navy;
+    border-right: 4px solid navy;
+    padding: 1%;
+    text-align: center;
+    vertical-align: center;
+    font-size: 130%;
+    color: white;
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#h1a {
+    border-left: 4px solid navy;
+}
+
+.grid-header-left {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid navy;
+    border-left: 4px solid navy;
+    padding: 1%;
+    font-size: 130%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#h2a {
+    border-top: 4px solid navy;
+}
+
+/* Clues box*/
+
+#logic-question {
+    color: black;
+    margin: 15px 0 0 15px;
+    font-size: 20px;
+}
+
+#clues-box {
+    margin-top: 15px;
+    border-radius: 40px;
+    border: 5px solid navy;
+    padding: 15px;
+    width: 100%;
+}
+
+.clues-title {
+    color: goldenrod;
+    -webkit-text-stroke: 1px navy;
+    font-size: 20px;
+}
+
+.exerpts-title {
+    color: goldenrod;
+    -webkit-text-stroke: 1px navy;
+    font-size: 20px;
+}
+
+.clue {
+    color: black;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+#clue1 {
+    margin-top: 5px;
+}
+
+.exerpt {
+    color: black;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+#exerpt1 {
+    margin-top: 5px;
+}
+#exerpt3 {
+    margin-bottom: 0;
+}
+
+/* POPUP */
+    
+.modal {
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    top: 50%;
+    left: 50%;
+    max-width: 70%;
+    width: 968px;
+    height: 500px;
+    border: 4px solid navy;
+    background-color: goldenrod;
+    border-radius: 40px;
+    text-align: center;
+    z-index: 10;
+}
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    border-bottom: 4px solid navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.modal-body {
+    padding: 5px;
+}
+
+#multiple-choice-container {
+    width: 80%;
+    margin: auto;
+}
+
+#multi-choice-help {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+#sortable-list {
+    list-style: none;
+}
+
+.multi-choice-answers {
+    padding: 7px;
+    margin: 5px;
+    border: 2px solid navy;
+    cursor: move;
+    border-radius: 40px;
+    color: black;
+}
+
+#correct-reasons {
+    list-style: none;
+    color: black;
+    font-weight: bolder;
+    margin-left: 20px;
+    text-align: left;
+    margin-top: -15px;
+    padding: 10px;
+}
+
+#reason-list {
+    list-style: none;
+    font-size: 12px;
+}
+#reason-list li {
+    padding-bottom: 5px;
+}
+
+#popup {
+    border-color: black;
+}
+
+#popup-half {
+    border-color: black;
+}
+
+#popupMessage {
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#popupHalfMessage {
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#submit {
+    background-color: black;
+    border-radius: 40px;
+    border: none;
+    color: goldenrod;
+    margin-left: 40px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#submit:hover {
+    background-color: white;
+    color: navy;
+}
+
+#closePopup {
+    background-color: black;
+    border-radius: 40px;
+    border: none;
+    color: goldenrod;
+    margin-left: 125px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#closePopup:hover {
+    background-color: goldenrod;
+    color: navy;
+}
+
+#tryAgainButton {
+    background-color: black;
+    border-radius: 40px;
+    border: none;
+    color: goldenrod;
+    margin-left: 70px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#tryAgainButton:hover {
+    background-color: goldenrod;
+    color: navy;
+}
+
+#revealAnswerButton {
+    background-color: black;
+    border-radius: 40px;
+    border: none;
+    color: goldenrod;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+#revealAnswerButton:hover {
+    background-color: goldenrod;
+    color: navy;
+}
