@@ -16,12 +16,14 @@ Test your historical knowledge and sharpen your critical thinking skills with th
 ### Reason for this project?
 There's generally a lack of focus on developing critical thinking skills. This project aims to shift focus towards developing critical thinking skills by gamifying the learning process.
 
-Additionally, I wanted to practice using vanilla JavaScript, HTML and CSS to build a website. This application uses its own API, using node.js in the backend. It's a good first project to get a handle on how to manoeuvre through pages, add simple features (such as drop down menus, popups, etc.) and build a full backend.
+Additionally, I wanted to practice using vanilla JavaScript, HTML and CSS to build a website. This application uses its own API, using node.js as my runtime. It's a good first project to get a handle on how to manoeuvre through pages, add simple features (such as drop down menus, popups, etc.) and build a full backend.
 
 ## Frontend
 This simple project has a home page and puzzle page.
 
 ## Backend
+url: https://puzzlwise-server.onrender.com/
+
 | Route | Purpose | Parameters |
 |:------|---------|------------|
 |/clues|Lists all the clues for each of the topics available to play from|none|
