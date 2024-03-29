@@ -19,10 +19,15 @@ There's generally a lack of focus on developing critical thinking skills. This p
 Additionally, I wanted to practice using vanilla JavaScript, HTML and CSS to build a website. This application uses its own API, using node.js in the backend. It's a good first project to get a handle on how to manoeuvre through pages, add simple features (such as drop down menus, popups, etc.) and build a full backend.
 
 ## Frontend
-This simple project has a landing page and puzzle page.
+This simple project has a home page and puzzle page.
 
 ## Backend
 | Route | Purpose | Parameters |
 |:------|---------|------------|
 |/clues|Lists all the clues for each of the topics available to play from|none|
 |/clues/:topicNum|Lists all the clues for a specific topic|topic id|
+
+## To view the application
+1) run the command `npm i` in the server and client folders, separately.
+2) run the command `npm run dev` in the server folder to get the server started.
+3) right click the home.html file in the client folder and select 'Open with Live Server'
