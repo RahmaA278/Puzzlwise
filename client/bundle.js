@@ -1,3 +1,48 @@
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+function home() {
+    const ww1 = document.getElementById("worldWarI");
+    const ww2 = document.getElementById("worldWarII");
+    const ancientRome = document.getElementById("ancientRome");
+    const renaissance = document.getElementById("renaissance");
+    const playBtn = document.getElementById("play");
+
+    ww1.addEventListener("click", highlightElement);
+    ww2.addEventListener("click", highlightElement);
+    ancientRome.addEventListener("click", highlightElement);
+    renaissance.addEventListener("click", highlightElement);
+    playBtn.addEventListener("click", redirectToPage);
+
+    function highlightElement(event) {
+    [ww1, ww2, ancientRome, renaissance].forEach(element => {
+        element.classList.remove("selected");
+    });
+
+    event.target.classList.add("selected");
+    }
+
+    function redirectToPage() {
+    if (ww1.classList.contains("selected")) {
+        alert("This topic is not yet available.");
+    } else if (ww2.classList.contains("selected")) {
+        window.location.href = "../puzzle/puzzle.html";
+    } else if (ancientRome.classList.contains("selected")) {
+        alert("This topic is not yet available.");
+    } else if (renaissance.classList.contains("selected")) {
+        alert("This topic is not yet available.");
+    } else {
+        alert("Please select a topic.");
+    }
+    }
+}
+
+module.exports = home
+},{}],2:[function(require,module,exports){
+const puzzle = require('./puzzle/puzzle')
+const home = require('./home/home')
+
+puzzle();
+home();
+},{"./home/home":1,"./puzzle/puzzle":3}],3:[function(require,module,exports){
 function puzzle() {
     const home = document.getElementById('home');
 
@@ -311,3 +356,4 @@ function puzzle() {
 }
 
 module.exports = puzzle
+},{}]},{},[2]);

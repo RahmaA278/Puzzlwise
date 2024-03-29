@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "watchify js/index.js"
+    "dev": "watchify ./index.js -o bundle.js"
   },
   "keywords": [],
   "author": "",
