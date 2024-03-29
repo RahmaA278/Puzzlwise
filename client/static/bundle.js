@@ -37,8 +37,8 @@ function home() {
 
 module.exports = home
 },{}],2:[function(require,module,exports){
-const puzzle = require('./puzzle/puzzle')
-const home = require('./home/home')
+const puzzle = require('../puzzle/puzzle')
+const home = require('../home/home')
 
 puzzle();
 home();
