@@ -220,7 +220,7 @@ function revealAnswerFunction() {
 }
 
 async function getAllData() {
-    const response = await fetch("http://localhost:3003/clues/1")
+    const response = await fetch("https://puzzlwise-server.onrender.com/clues/1")
     const information = await response.json();
     question = information.question
     clues.push(information.clue1, information.clue2, information.clue3, information.clue4, information.clue5, information.clue6);
