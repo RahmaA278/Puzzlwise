@@ -22,7 +22,7 @@ function redirectToPage() {
 if (ww1.classList.contains("selected")) {
     alert("This topic is not yet available.");
 } else if (ww2.classList.contains("selected")) {
-    window.location.href = "../puzzle/puzzle.html";
+    window.location.href = "./puzzle/puzzle.html";
 } else if (ancientRome.classList.contains("selected")) {
     alert("This topic is not yet available.");
 } else if (renaissance.classList.contains("selected")) {
