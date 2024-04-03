@@ -46,7 +46,7 @@ const reason3 = document.getElementById('reason3');
 const reason4 = document.getElementById('reason4');
 
 home.addEventListener('click', () => {
-    window.location.href = "../home.html";
+    window.location.href = "../index.html";
 })
 
 let question = "";
