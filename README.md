@@ -19,6 +19,8 @@ There's generally a lack of focus on developing critical thinking skills. This p
 Additionally, I wanted to practice using vanilla JavaScript, HTML and CSS to build a website. This application uses its own API, using node.js as my runtime. It's a good first project to get a handle on how to manoeuvre through pages, add simple features (such as drop down menus, popups, etc.) and build a full backend.
 
 ## Frontend
+url: https://puzzlwise.onrender.com
+
 This simple project has a home page and puzzle page.
 
 ## Backend
